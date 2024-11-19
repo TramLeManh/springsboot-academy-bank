@@ -6,8 +6,8 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class BankResponse {
+public class BankResponse<T> {
     private String responeCode;
     private String responeMessage;
-    private AccountInfo AccountInfo;
+    private T data;
 }
